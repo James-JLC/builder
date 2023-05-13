@@ -30,7 +30,7 @@ import (
 
 const (
 	layerName                 = "functions-framework"
-	functionsFrameworkPackage = "@openfunction/functions-framework"
+	functionsFrameworkPackage = "@yuanshan-ai/functions-framework"
 )
 
 func main() {
@@ -93,6 +93,7 @@ func buildFn(ctx *gcp.Context) error {
 	// installed below.
 	ff := filepath.Join(".bin", "functions-framework")
 
+	ctx.Logf("==================================================================")
 	if hasFrameworkDependency {
 		ctx.Logf("Handling functions with dependency on functions-framework.")
 		ctx.ClearLayer(l)
@@ -114,7 +115,7 @@ func buildFn(ctx *gcp.Context) error {
 
 	ctx.SetFunctionsEnvVars(l)
 	ctx.AddDefaultWebProcess([]string{"/bin/sh", "-c", ff}, true)
-  
+
 	return nil
 }
 

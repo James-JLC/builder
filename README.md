@@ -32,3 +32,5 @@ Need to support multiple microservice frameworks.
 ### Eventing kind
 
 Need to support multiple event sources.
+
+echo "USE_BAZEL_VERSION=4.2.0" > .bazeliskrc

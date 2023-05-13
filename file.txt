@@ -1,0 +1,5 @@
+Build options: --subcommands=1 --explain=file.txt --verbose_explanations
+Executing action 'BazelWorkspaceStatusAction stable-status.txt': unconditional execution is requested.
+Executing action 'PackageTar builders/node16/builder_nodejs.tar': One of the files has changed.
+Executing action 'PackageTar builders/node16/builder.tar': One of the files has changed.
+Executing action 'Executing genrule //builders/node16:builder.image': One of the files has changed.
